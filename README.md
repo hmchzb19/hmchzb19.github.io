@@ -1,15 +1,3 @@
----
-layout: page
-titles:
-  en: Linuxer
-  zh: Linuxer
-  zh-Hans: Linuxer
-  zh-Hant: Linuxer
-key: page-about
----
-[another blog of mine](http://blog.chinaunix.net/uid/7713641.html) 
-
-
-{% highlight javascript %}
-(() => console.log('hello, world!'))();
-{% endhighlight %}
+##自我介绍
+- Linuxer,ex IBMer GNU,Kali User 
+- [another blog of mine]  <http://blog.chinaunix.net/uid/7713641.html>

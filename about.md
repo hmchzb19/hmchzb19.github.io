@@ -7,9 +7,7 @@ titles:
   zh-Hant: Linuxer
 key: page-about
 ---
-[another blog of mine](http://blog.chinaunix.net/uid/7713641.html) 
+- Linuxer,ex IBMer GNU,Kali User 
+- [another blog of mine]  <http://blog.chinaunix.net/uid/7713641.html>
 
 
-{% highlight javascript %}
-(() => console.log('hello, world!'))();
-{% endhighlight %}

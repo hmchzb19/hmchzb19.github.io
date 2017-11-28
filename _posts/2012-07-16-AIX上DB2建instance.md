@@ -12,8 +12,7 @@
     #db2iauto -on db2inst6
 
 
-- 打开self_tuning memory. 
-- 
+1 .打开self_tuning memory.
 
     
 
@@ -30,5 +29,3 @@
     db2 "update database configuration for sample using SORTHEAP AUTOMATIC"
     db2 "update database configuration for sample using SHEAPTHRES_SHR AUTOMATIC"
     db2 "update database configuration for sample using DATABASE_MEMORY AUTOMATIC"
-
-    

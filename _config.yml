@@ -13,7 +13,8 @@
 
 ## Base settings ##
 # url:  #!the base hostname & protocol for your site e.g. https://www.someone.com (!!required!!)
-baseurl: /
+url:  http://hmchzb19.github.io
+baseurl: / 
 title: hmchzb19's blog
 description: > #this means to ignore newlines until "nav_lists:"
   hmchzb19's Blog
@@ -28,8 +29,8 @@ nav_lists:
     url: /about.html
 
 ## GitHub repository (if the site is hosted by GitHub) ##
-# repository: e.g. someone/someone.github.io
-# repository_tree: e.g. master
+repository: hmchzb19/hmchzb19.github.io
+repository_tree: master
 
 ## Language & timezone ##
 lang: en #the language of your site, eg: en(English), zh(简体中文), zh-Hans(简体中文), zh-Hant(繁體中文)

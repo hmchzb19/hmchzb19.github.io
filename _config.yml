@@ -28,6 +28,12 @@ nav_lists:
       zh-Hant: Linuxer
     url: /about.html
 
+
+paths:
+  home: /
+  all:  /all.html
+  rss:  /feed.xml
+
 ## GitHub repository (if the site is hosted by GitHub) ##
 repository: hmchzb19/hmchzb19.github.io
 repository_tree: master
@@ -69,7 +75,7 @@ paginate_path: /blog/page:num
 
 ## Post excerpts ##
 excerpt_separator: <!--more-->
-excerpt_type: text ## text | html
+excerpt_type: html ## text | html
 
 ## Build ##
 markdown: kramdown

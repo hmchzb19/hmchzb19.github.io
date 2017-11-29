@@ -89,6 +89,7 @@ exclude:
   - /docs
   - /screenshots
   - /test
+  - /_site
 
 ## Plugins ##
 gems:

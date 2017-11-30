@@ -60,6 +60,7 @@ disqus:
 
 ## Google Analytics ##
 # ga_tracking_id:  #Google analytics id for the site
+ga_tracking_id:  UA-110461237-1
 
 ## Reading quantity (LeanCloud) ##
 leancloud:

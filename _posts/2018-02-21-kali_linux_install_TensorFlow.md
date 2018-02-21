@@ -17,7 +17,8 @@
 
         python3.5 -m venv TensorEnv
         cd TensorEnv
-        mkdir -p TensorFLow 
+        mkdir -p TensorFLow
+        source bin/activate 
 
     
     下载文件

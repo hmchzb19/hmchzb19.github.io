@@ -1,9 +1,9 @@
 最近看了点视频，用代码记录下思路，今天是Array problem. 
 
-1. find the most frequently occurred item in an Array　
+1.. find the most frequently occurred item in an Array　
 
 思路很简单，就是用词典来记录item出现的次数就可以，key 是item, value是item出现的次数。
-注意处理有多个item同时有最高的出现次数就可以了。 
+注意处理有多个item同时有最高的出现次数就可以了。 　
 
         def most_frequent(given_array):
             most_count = -1 
@@ -29,9 +29,9 @@
             
         
         ll=[1,2,4,5,7,1,2,2,2,2,1,1,1]
-        print(most_frequent(ll))　
+        print(most_frequent(ll))　　　
 
-２.  Find two common elements in 2 sorted Arrays　
+２..  Find two common elements in 2 sorted Arrays　
 在两个已经排序的数组里面找到相同的element. 
 
         def common_elem(A,B):
@@ -51,10 +51,10 @@
 
         l1=[1,3,4,6,7,9]
         l2=[1,2,4,5,9,10]
-        print(common_elem(l1, l2)) 
+        print(common_elem(l1, l2)) 　
          
 
-3.  is One Array a rotation of Another Array
+3..  is One Array a rotation of Another Array
 
 前提条件：no duplicate in Array A AND Array B 
 

@@ -1,4 +1,4 @@
-今天得到的教训，好久没有升级kali了，想升级下  
+#### 今天得到的教训，好久没有升级kali了，想升级下  
 
         apt-get update
         apt-get dist-upgrade
@@ -38,4 +38,28 @@
 
 我的结论是,kali 这个系统的GUI经常出现各种各样的问题, 以前就是问题频发。  
 我感觉不要经常做dist-upgrade.  
-弄一次就黑一次屏，换个GDM, 是很累的事情。  
+弄一次就黑一次屏，换个GDM, 是很累的事情。   
+
+最后看下升级完的的Ｇrub  
+
+    
+    
+        root@kali:~# update-grub
+        Generating grub configuration file ...
+        Found background image: /usr/share/images/desktop-base/desktop-grub.png
+        Found linux image: /boot/vmlinuz-4.15.0-kali3-amd64
+        Found initrd image: /boot/initrd.img-4.15.0-kali3-amd64
+        Found linux image: /boot/vmlinuz-4.12.0-kali2-amd64
+        Found initrd image: /boot/initrd.img-4.12.0-kali2-amd64
+        Found linux image: /boot/vmlinuz-4.7.0-kali1-amd64
+        Found initrd image: /boot/initrd.img-4.7.0-kali1-amd64
+        Found linux image: /boot/vmlinuz-4.6.0-kali1-amd64
+        Found initrd image: /boot/initrd.img-4.6.0-kali1-amd64
+        Found Windows 8 on /dev/sda1
+        done
+        root@kali:~# uname -a
+        Linux kali 4.15.0-kali3-amd64 #1 SMP Debian 4.15.17-1kali1 (2018-04-25) x86_64 GNU/Linux
+    
+
+
+好新的kernel 

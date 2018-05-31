@@ -52,11 +52,11 @@ P(B|A): probability of B given A has already occurred.
     Even though P(B|A) is 99%, P(A|B) is only 22.8%.
     
 
-3. 看完Bayes' Theorem,  对很多所谓的统计数字能有些新的认识。
-    参考web page .  
-    [https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/](URL)
+3. 看完Bayes' Theorem,  对很多所谓的统计数字能有些新的认识。  
+    参考web page .   
+    [https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/](https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/)
 
-    里面的例子是cancer test.
+    里面的例子是cancer test.  
     %1的人有癌症， 99%没有  
     80%有癌症的人能得到正确的结果，20%人即使有cancer 可能也会miss.  
     没有癌症的人9.6%的几率会被误诊为癌症， 90.4%的概率会得到自己没有癌症的诊断。  

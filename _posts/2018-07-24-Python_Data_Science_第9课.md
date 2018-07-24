@@ -5,9 +5,11 @@ Machine Learning分为unsupervised learning 和 supervised learning.
 区别在: supervised learning: 有“参考答案”，而unsupervised learning则没有"参考答案"  
 
 2. Train /Test :  
+<p>
 Need to ensure both sets are large enough to contain representatives of all the variations and outliers in the data you care about.  
 The data sets must be selected randomly.  
 Train/Test is a great way to guard against overfitting.  
+</p>
 <p>
 K-fold Cross validation:  
   One way to further protect against overfitting is k-fold cross validation.  
@@ -16,6 +18,7 @@ K-fold Cross validation:
     - Train on each of the remaining k-1 segments and measure their performance against the test set.
     - Take the average of the k-1 r-squared scores.
 </p>
+
 
 3. 下面就是实际代码  
 Train /Test practice - prevent overfitting of a polynomial regression.  

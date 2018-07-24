@@ -5,26 +5,26 @@ Machine Learning分为unsupervised learning 和 supervised learning.
 区别在: supervised learning: 有“参考答案”，而unsupervised learning则没有"参考答案"  
 
 2. Train /Test :  
-<p>
 Need to ensure both sets are large enough to contain representatives of all the variations and outliers in the data you care about.  
 The data sets must be selected randomly.  
-Train/Test is a great way to guard against overfitting.  
-</p>
-<p>
+Train/Test is a great way to guard against overfitting.   
+<br/>
 K-fold Cross validation:  
-  One way to further protect against overfitting is k-fold cross validation.  
+  One way to further protect against overfitting is k-fold cross validation.   
+
+
     - split your data into k randomly-assigned segments.
     - Reserve one segment as your test data.
     - Train on each of the remaining k-1 segments and measure their performance against the test set.
     - Take the average of the k-1 r-squared scores.
-</p>
 
 
 3. 下面就是实际代码  
 Train /Test practice - prevent overfitting of a polynomial regression.  
-<p>
+<br/>
 首先是伪造数据
-</p>
+<br/>
+
         np.random.seed(2)
         pageSpeeds = np.random.normal(3.0, 1.0, 100)
         purchaseAmount = np.random.normal(50.0, 30.0, 100) / pageSpeeds
@@ -76,9 +76,7 @@ Train /Test practice - prevent overfitting of a polynomial regression.
         plt.scatter(testx,testy)
         plt.plot(xp, p8(xp), c='r')
         plt.show()
-<p>    
-检查r-squared
-</p>
+
     
     
         #r-squared score on the test data is terrible: 0.30 , even though it fits the training data.
@@ -89,7 +87,6 @@ Train /Test practice - prevent overfitting of a polynomial regression.
         r3=r2_score(y, p8(x))
         print(r3)
     
-
 
 4. 写在最后, 经过实验  
 使用6-degree polynomial 的时候，test data 的r-squared最大. 0.60.

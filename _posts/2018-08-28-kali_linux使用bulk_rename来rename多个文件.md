@@ -5,8 +5,8 @@
 使用直接看截图: 效果不错. 11个字符(两个括号，一个dot，８个字母)刚好是从后面11-0. 
 
 rename截图
-<div align="center">    
-<img src='https://github.com/hmchzb19/hmchzb19.github.io/blob/master/screenshots/rename.png'>
+<div align="center">
+<img src='rename.png'>
 </div>
 
 PS: 截图软件`xfce4-screenshooter`

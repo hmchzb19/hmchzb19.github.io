@@ -5,7 +5,7 @@
 使用直接看截图: 效果不错. 11个字符(两个括号，一个dot，８个字母)刚好是从后面11-0. 
 
 <div align="center">
-![rename截图](rename.png)
+![rename截图](/blog/hmchzb19.github.io/_posts/rename.png?raw=true)
 </div>
 
 PS: 截图软件`xfce4-screenshooter`

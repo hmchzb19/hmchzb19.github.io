@@ -1,18 +1,19 @@
 K-means clustering
 
 1. K-Means clustering is unsupervised learning. means split data into K groups,
-algorithm for k-means clustering:
--. Randomly pick K centroids(k-means)
--. Assign each data point to the centroid it is closest to.
--. Recompute the centroids based on the average position of each centroid's points.
--. Iterate until points stop changing assignment to centroids.
--. Predict the cluster for new points.
+algorithm for k-means clustering:  
 
-The limitation of K-means clustering:
--. Choosing K:  choose the right value of K, the principal way of choosing k is just start low and keep increasing the value of K depending on how many groups you want.
--. Avoiding local minima
--. Labeling the clusters. 
+- Randomly pick K centroids(k-means)
+- Assign each data point to the centroid it is closest to.
+- Recompute the centroids based on the average position of each centroid's points.
+- Iterate until points stop changing assignment to centroids.
+- Predict the cluster for new points.
 
+The limitation of K-means clustering:  
+
+- Choosing K:  choose the right value of K, the principal way of choosing k is just start low and keep increasing the value of K depending on how many groups you want.
+- Avoiding local minima
+- Labeling the clusters. 
 
 
 2. 实际例子，可以使用sklearn里面的KMeans函数。  

@@ -66,6 +66,7 @@ test_()该函数会返回second definition
 ```
 
 
+
 2. 但是可以使用metaclass 避免这个情况，即不允许class里面有同名的method.  
 we can write metaclass which detects and prevents this.  
 rather than using a regular dictionary as the namespace object used during class construction  

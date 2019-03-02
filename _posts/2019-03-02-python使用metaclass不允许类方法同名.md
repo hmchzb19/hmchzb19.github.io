@@ -1,8 +1,8 @@
 **我这里大部分代码出自The Python Master一书**  
 
+
 1. 在python的class里面,允许同名的方法存在。但是后定义的方法会覆盖掉先定义的方法.  
 例如  
-
 ```
         class Dod1:  
             def method1(self):

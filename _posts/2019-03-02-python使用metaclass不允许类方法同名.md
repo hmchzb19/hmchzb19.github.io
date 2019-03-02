@@ -25,7 +25,6 @@
 
    test_()该函数会返回second definition  
    又如  
-
 ```
     class T:
         
@@ -53,7 +52,6 @@
 ```
 
    这一段代码的运行结果是
-
 ```
     test1() takes 1 positional argument but 2 were given
     I am test1
@@ -64,8 +62,7 @@
 we can write metaclass which detects and prevents this.  
 rather than using a regular dictionary as the namespace object used during class construction  
 we need a dictionary which raises an error when we try to assign to an  existing key.  
-代码如下:　　
-
+代码如下:  
 ```
     class OneShotDict(dict):
         
@@ -105,7 +102,6 @@ we need a dictionary which raises an error when we try to assign to an  existing
 `KeyError: "Cannot assign existing key 'method1' in 'OneShotDict'"`  
 
 改进以后则如下:  
-
 ```
     class OneShotClassNamespace(dict):
         

@@ -23,8 +23,8 @@
         test_()
 ```
 
-test_()该函数会返回second definition  
-又如  
+   test_()该函数会返回second definition  
+   又如  
 
 ```
     class T:
@@ -52,7 +52,7 @@ test_()该函数会返回second definition
     test_()
 ```
 
-这一段代码的运行结果是
+   这一段代码的运行结果是
 
 ```
     test1() takes 1 positional argument but 2 were given

@@ -8,7 +8,7 @@ algorithm for k-means clustering:
   + Iterate until points stop changing assignment to centroids.
   + Predict the cluster for new points.
 
-The limitation of K-means clustering:  
+   The limitation of K-means clustering:  
   * Choosing K:  choose the right value of K, the principal way of choosing k is just start low and keep increasing the value of K depending on how many groups you want.
   * Avoiding local minima
   * Labeling the clusters. 

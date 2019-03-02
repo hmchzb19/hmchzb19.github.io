@@ -97,10 +97,8 @@ we need a dictionary which raises an error when we try to assign to an  existing
             def method1(self): 
                 return "second definition"
 ```
-
 但是出错信息不够清晰如下：  
 `KeyError: "Cannot assign existing key 'method1' in 'OneShotDict'"`  
-
 改进以后则如下:  
 ```
     class OneShotClassNamespace(dict):

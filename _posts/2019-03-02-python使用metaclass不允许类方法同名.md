@@ -1,10 +1,9 @@
 我这里大部分代码出自The Python Master一书  
 
 1. 在python的class里面,允许同名的方法存在。但是后定义的方法会覆盖掉先定义的方法.  
-例如:  
+例如:　　
 
-    class Dod1:
-        
+    class Dod1:  
         def method1(self):
             return "first definition"
         
@@ -15,14 +14,12 @@
         def method1(self):
             return "second definition"
         
-        
     def test_():
         
         d1 = Dod1()
         print(d1.method1())
 
     test_()
-
 
 test_() 会返回second definition  
 又如  
@@ -34,7 +31,6 @@ test_() 会返回second definition
         
         def test1(self):
             print("I am test1")
-
 
     def test_():
         
@@ -98,7 +94,7 @@ we need a dictionary which raises an error when we try to assign to an  existing
                 return "second definition"
 
 但是出错信息不够清晰如下：  
-`KeyError: "Cannot assign existing key 'method1' in 'OneShotDict'"`
+`KeyError: "Cannot assign existing key 'method1' in 'OneShotDict'"`  
 
 改进以后则如下:  
 
@@ -118,14 +114,11 @@ we need a dictionary which raises an error when we try to assign to an  existing
         
             super().__setitem__(key, value)
 
-
     class ProhibitDupInClass(type):
         
         @classmethod
         def __prepare__(mcs, name, bases):
             return OneShotClassNamespace(name)
-
-
 
     if __name__ == "__main__":
         '''Can not define a class with duplicate methods using this metaclass'''
@@ -139,7 +132,6 @@ we need a dictionary which raises an error when we try to assign to an  existing
 
 这时候出错信息如下:  
 `TypeError: Can not reassign existing class attribute 'method1' of 'Dod2'`
-
 
     if __name__ == "__main__":
         '''Can not define a class with duplicate methods using this metaclass'''

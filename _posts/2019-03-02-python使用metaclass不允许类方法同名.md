@@ -20,7 +20,8 @@
             d1 = Dod1()
             print(d1.method1())
 
-test_()
+        test_()
+
 
 test_() 会返回second definition  
 又如  

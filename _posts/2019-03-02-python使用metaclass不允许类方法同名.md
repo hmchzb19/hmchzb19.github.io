@@ -22,8 +22,11 @@
         test_()
 ```
 
+
 test_() 会返回second definition  
-又如  
+又如
+
+
 ```
     class T:
         
@@ -49,17 +52,24 @@ test_() 会返回second definition
 
     test_()
 ```
-这一段代码的运行结果是  
+
+
+这一段代码的运行结果是
+
+
 ```
     test1() takes 1 positional argument but 2 were given
     I am test1
 ```
 
+
 2. 但是可以使用metaclass 避免这个情况，即不允许class里面有同名的method.  
 we can write metaclass which detects and prevents this.  
 rather than using a regular dictionary as the namespace object used during class construction  
 we need a dictionary which raises an error when we try to assign to an  existing key.  
-代码如下:  
+代码如下:　　
+
+
 ```
     class OneShotDict(dict):
         
@@ -94,10 +104,14 @@ we need a dictionary which raises an error when we try to assign to an  existing
             def method1(self): 
                 return "second definition"
 ```
+
+
 但是出错信息不够清晰如下：  
 `KeyError: "Cannot assign existing key 'method1' in 'OneShotDict'"`  
 
 改进以后则如下:  
+
+
 ```
     class OneShotClassNamespace(dict):
         
@@ -133,6 +147,8 @@ we need a dictionary which raises an error when we try to assign to an  existing
 ```
 这时候出错信息如下:  
 `TypeError: Can not reassign existing class attribute 'method1' of 'Dod2'`
+
+
 ```
     if __name__ == "__main__":
         '''Can not define a class with duplicate methods using this metaclass'''

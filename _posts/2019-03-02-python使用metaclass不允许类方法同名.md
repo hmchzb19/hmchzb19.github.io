@@ -1,8 +1,7 @@
-**我这里大部分代码出自The Python Master一书**
-
+**我这里大部分代码出自The Python Master一书**  
 
 1. 在python的class里面,允许同名的方法存在。但是后定义的方法会覆盖掉先定义的方法.  
-例如
+例如  
 
 ```
         class Dod1:  
@@ -24,8 +23,8 @@
         test_()
 ```
 
-test_()该函数会返回second definition
-又如
+test_()该函数会返回second definition  
+又如  
 
 ```
     class T:

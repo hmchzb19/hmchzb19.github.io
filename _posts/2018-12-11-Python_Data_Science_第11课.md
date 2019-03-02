@@ -15,7 +15,6 @@ The limitation of K-means clustering:
   + Avoiding local minima
   + Labeling the clusters. 
 
-
 2. 实际例子，可以使用sklearn里面的KMeans函数。  
 这个例子制造了一些人收入和年龄的数字，然后进行cluster.  
 

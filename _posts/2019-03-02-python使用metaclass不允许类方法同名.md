@@ -1,25 +1,26 @@
 我这里大部分代码出自The Python Master一书  
 
 1. 在python的class里面,允许同名的方法存在。但是后定义的方法会覆盖掉先定义的方法.  
-例如:　　
+例如
 
-    class Dod1:  
-        def method1(self):
-            return "first definition"
-        
-        '''The second definition takes precedence because
-        it overwrites the first entry in the namespace 
-        dictionary as the class definition is processed
-        '''
-        def method1(self):
-            return "second definition"
-        
-    def test_():
-        
-        d1 = Dod1()
-        print(d1.method1())
 
-    test_()
+        class Dod1:  
+            def method1(self):
+                return "first definition"
+            
+            '''The second definition takes precedence because
+            it overwrites the first entry in the namespace 
+            dictionary as the class definition is processed
+            '''
+            def method1(self):
+                return "second definition"
+            
+        def test_():
+            
+            d1 = Dod1()
+            print(d1.method1())
+
+test_()
 
 test_() 会返回second definition  
 又如  

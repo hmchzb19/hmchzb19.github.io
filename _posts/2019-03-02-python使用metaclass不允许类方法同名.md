@@ -135,7 +135,6 @@ we need a dictionary which raises an error when we try to assign to an  existing
 ```
 这时候出错信息如下:  
 `TypeError: Can not reassign existing class attribute 'method1' of 'Dod2'`
-
 ```
     if __name__ == "__main__":
         '''Can not define a class with duplicate methods using this metaclass'''

@@ -9,9 +9,10 @@ algorithm for k-means clustering:
   + Predict the cluster for new points.
 
    The limitation of K-means clustering:  
-     * Choosing K:  choose the right value of K, the principal way of choosing k is just start low and keep increasing the value of K depending on how many groups you want.
-     * Avoiding local minima
-     * Labeling the clusters. 
+   
+  * Choosing K:  choose the right value of K, the principal way of choosing k is just start low and keep increasing the value of K depending on how many groups you want.
+  * Avoiding local minima
+  * Labeling the clusters. 
 
 2. 实际例子，可以使用sklearn里面的KMeans函数。  
 这个例子制造了一些人收入和年龄的数字，然后进行cluster.  

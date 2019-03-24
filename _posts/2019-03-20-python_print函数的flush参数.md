@@ -5,10 +5,10 @@ from colorama import Fore, Back, Style
 
 def print_example():
     print(Fore.RED+ "1. This is the first sentence")
-    text=' Blowing in the wind'
-    print(Fore.WHITE + '2. text =', end='')
-    #print('2. text= ', end='')
-    print(text,file=sys.stderr)
+     long_str=' Blowing in the wind'
+    print(Fore.WHITE + '2.  long_str =', end='')
+    #print('2.  long_str= ', end='')
+    print( long_str,file=sys.stderr)
     print(Fore.CYAN + "3. Do they printed in right order")
 
 print_example()
@@ -17,7 +17,7 @@ print_example()
 ```
 1. This is the first sentence
  Blowing in the wind
-2. text =3. Do they printed in right order
+2.  long_str =3. Do they printed in right order
 ```
 为什么stderr和stdout会打印到一起呢? 我的猜想也许跟stdout, stderr的缓冲机制有关
 后来发现python 3.3 后print可以加flush参数, 这样就能得到我想要的打印次序
@@ -27,17 +27,17 @@ from colorama import Fore, Back, Style
 
 def print_example():
     print(Fore.RED+ "1. This is the first sentence")
-    text=' Blowing in the wind'
-    print(Fore.WHITE + '2. text =', end='',flush=True)
-    #print('2. text= ', end='')
-    print(text,file=sys.stderr)
+     long_str=' Blowing in the wind'
+    print(Fore.WHITE + '2.  long_str =', end='',flush=True)
+    #print('2.  long_str= ', end='')
+    print( long_str,file=sys.stderr)
     print(Fore.CYAN + "3. Do they printed in right order")
 
 print_example()
 
 打印出来如下
 1. This is the first sentence
-2. text = Blowing in the wind
+2.  long_str = Blowing in the wind
 3. Do they printed in right order
 
 ```

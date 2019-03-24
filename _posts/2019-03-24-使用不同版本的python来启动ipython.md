@@ -29,6 +29,7 @@
 把VERSION这个变量修改下，就能Invoke不同的python版本.  
 `3.7就是python3.7`
 `3.6就是python3.6`
+
 ```
     #! /bin/sh
 
@@ -41,5 +42,4 @@
     else
         exec python$VERSION -c "import sys; sys.argv[0] = '/usr/bin/ipython$VERSION'; from IPython.terminal.ipapp import launch_new_instance; launch_new_instance()" "$@"
     fi
-
 ```

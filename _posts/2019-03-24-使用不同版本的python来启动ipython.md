@@ -1,5 +1,6 @@
 我的笔记本上有多个python3的版本, 3.5, 3.6, 3.7  都有，我有时候想要在不同的python版本间切换。后来得知有两种办法，第一种方法.  
 
+
 1. 使用`python[VERION] -m IPython`的办法来调用ipython  
 ```
 ython3.6 -m IPythons

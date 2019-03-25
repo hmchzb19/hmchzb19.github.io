@@ -228,3 +228,5 @@ plugins:
   - jekyll-sitemap
   - jemoji
 
+
+theme: jekyll-theme-minimal

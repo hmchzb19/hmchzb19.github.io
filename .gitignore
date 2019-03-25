@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # General
 .DS_Store
 .AppleDouble
@@ -188,3 +189,4 @@ package-lock.json
 _site/
 .sass-cache/
 .jekyll-metadata
+>>>>>>> 29e7c732cdb28ae51795a7b8e54fa848dfa9c443

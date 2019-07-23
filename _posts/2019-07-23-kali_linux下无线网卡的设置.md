@@ -29,7 +29,6 @@ iwlist wlan0 scanning
 尝试Wi-Fi Security下面各种组合.  
 最后得到的是  
 ````
-
     Security: WPA & WPA2 Enterprise
     Authentication: Protected EAP(PEAP)
     Anonymous identity: 空
@@ -42,6 +41,5 @@ iwlist wlan0 scanning
     Inner authentication: MD5.
     Username: [提供的USERNAME]
     Password: [提供的PASSWORD]
-
 ````
-至此连接成功
+

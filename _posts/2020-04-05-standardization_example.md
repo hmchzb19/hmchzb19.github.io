@@ -1,12 +1,12 @@
 想要练下standardization,结果就有了这一篇.
 理论上的Normalization vs. Standardization  
 The terms normalization and standardization are sometimes used interchangeably, but they usually refer to different things. 
-Normalization usually means to scale a variable to have a values between 0 and 1, 
-while standardization transforms data to have a mean of zero and a standard deviation of 1. 
-This standardization is called a z-score
+Normalization usually means to scale a variable to have a values between 0 and 1,   
+while standardization transforms data to have a mean of zero and a standard deviation of 1.   
+This standardization is called a z-score  
 
-Standardized: (X-mean) / sd 
-Normalized: (X - min(X)) / (max(X)-min(X))
+Standardized: (X-mean) / sd  
+Normalized: (X - min(X)) / (max(X)-min(X))  
 
 在sklearn里面standardization只要两行
 ````
@@ -30,8 +30,8 @@ X_train_std, X_test_std = scaler.transform(X_train), scaler.transform(X_test)
 9. Class variable (0 or 1) : target, 标签， 0表示不发病，1表示发病
 ````
 
-这个代码是我参考一本书叫Hands-on Scikit-Learn for Machine Learing Applications上的代码修改而来的。
-RandomForestClassifier和ExtraTreesClassifier对stardardized数据和未经standardized的数据几乎没有差别。
+这个代码是我参考一本书叫Hands-on Scikit-Learn for Machine Learning Applications上的代码修改而来的。
+RandomForestClassifier和ExtraTreesClassifier对stardardized数据和未经standardized的数据几乎没有差别。  
 后面的svm和knn我没有实验.
 代码如下
 
